@@ -8,7 +8,7 @@ class Synth extends Component {
     console.log(this.props);
     return (
       <div className="Synthesizer">
-      <div>
+      <div class="canvas">
       <canvas id="viewport" width="500" height="480"></canvas>
       </div>
 

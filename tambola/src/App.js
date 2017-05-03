@@ -23,10 +23,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-intro">
-          Tambola | Keyboard
+          Synthesizer | Tambola
           <p> Click Notes on the Left & Randomly Loop to your right</p>
         </div>
-        
+
         <Synth synth={this.state.synth}/>
 
       </div>

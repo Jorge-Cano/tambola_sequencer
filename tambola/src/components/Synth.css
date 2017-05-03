@@ -13,6 +13,10 @@ background, html {
   border-radius: 25px;
 }
 
+.canvas.clearfix {
+  display: inline-block;
+}
+
 .App {
   padding-top: 50px;
   font-size: 36px;

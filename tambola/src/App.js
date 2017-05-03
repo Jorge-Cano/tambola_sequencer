@@ -22,9 +22,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p className="App-intro">
+        <div className="App-intro">
           Tambola | Keyboard
-        </p>
+          <p> Click Notes on the Left & Randomly Loop to your right</p>
+        </div>
 
         <Synth synth={this.state.synth}/>
 

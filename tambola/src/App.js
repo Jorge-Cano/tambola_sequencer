@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Synth from './components/Synth';
-import './App.css';
+
 
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
           Tambola | Keyboard
           <p> Click Notes on the Left & Randomly Loop to your right</p>
         </div>
-
+        
         <Synth synth={this.state.synth}/>
 
       </div>

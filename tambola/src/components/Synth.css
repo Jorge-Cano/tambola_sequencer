@@ -1,0 +1,210 @@
+background, html {
+  background: rgba(242, 99, 58, .9);
+  text-align: center;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+#viewport{
+  background: black;
+  float: right;
+  padding-right: 40px;
+  margin-right: 30px;
+  border-radius: 25px;
+}
+
+.App {
+  padding-top: 50px;
+  font-size: 36px;
+}
+
+* {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:active, a:hover {
+  color: #FFF;
+  font-weight: 600;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #CCC;
+}
+
+input:focus {
+  outline:none;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  top: 150px;
+  color: #fff;
+  text-align: center;
+}
+
+.container .parts {
+  text-align: left;
+  padding: 20px;
+
+}
+
+.synth {
+  width: 571px;
+  height:540px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #03090a;
+  font-weight: 300;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 40px;
+}
+
+.synth .touch-move-scroll-blocker {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.synth .modules {
+margin-left: 27px;
+margin-top: 40px;
+}
+
+.synth .modules .module {
+  float: left;
+  text-transform: uppercase;
+  height: 100%;
+  margin: auto;
+}
+
+.synth .modules .module .module-label {
+  float: left;
+  clear: both;
+  width: 100%;
+  font-weight: 600;
+  color: #FFF;
+  background-color: #FF0000;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.synth .modules .module .slider {
+  padding: 10px 30px 0 0;
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+
+.synth .modules .module .slider .label {
+  width: 100%;
+  height: 25px;
+  float: left;
+  font-size: 9px;
+  color: #FFF;
+}
+
+.synth .modules .module .slider input[type="range"] {
+  background-color: #ffc90a;
+  -webkit-appearance: none;
+  -webkit-transform: rotate(270deg);
+  width: 180px;
+  margin: 80px -100px 0px -40px;
+  border-radius:25px;
+
+}
+
+.synth .modules .module .slider input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-image: url("https://dl.dropboxusercontent.com/s/b98kx952tnnu3sp/slider-thumb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  border: 0px solid #000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.synth .modules .module .slider .waveform-label {
+  position: absolute;
+  top: 38px;
+  left: -13px;
+  height: 100%;
+  width: 20px;
+}
+
+.synth .modules .module .slider .waveform-label img {
+  padding: 6px 0px;
+}
+
+#piano-keys {
+  width: 500px;
+  height: 180px;
+  margin-left: 60px;
+  margin-top: 225px;
+}
+
+#piano-keys .key {
+  display: inline-block;
+  width: 12.28571428571429%;
+  height: 100%;
+  float: left;
+  position: relative;
+  margin-right: 4px;
+  background-color: #fdfdfd;
+  -webkit-transition: background-color ease-out .25s;
+}
+#piano-keys .first {
+
+border-radius: 0px 0px 0px 12px;
+-moz-border-radius: 0px 0px 0px 12px;
+-webkit-border-radius: 0px 0px 0px 12px;
+border: 0px solid #000000;
+
+}
+
+#piano-keys .last {
+
+  border-radius: 0px 0px 12px 0px;
+-moz-border-radius: 0px 0px 12px 0px;
+-webkit-border-radius: 0px 0px 12px 0px;
+border: 0px solid #000000;
+
+}
+#piano-keys .key.sharp {
+  background-color: #000;
+  height: 66.6%;
+  width: 66.6%;
+  margin-right: 50%;
+  position: absolute;
+  left: 66.6%;
+  z-index: 100;
+}
+#piano-keys .key.sharp.held {
+  background-color: #ffff00;
+}
+#piano-keys .key.held {
+  background-color: #ff0000;
+}

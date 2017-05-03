@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Synth.css';
+import './SynthFunction.js'
 
 
 class Synth extends Component {
@@ -6,6 +8,9 @@ class Synth extends Component {
     console.log(this.props);
     return (
       <div className="Synthesizer">
+      <div>
+      <canvas id="viewport" width="500" height="480"></canvas>
+      </div>
 
 
         <div className="container">
